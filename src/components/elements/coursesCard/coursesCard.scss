@@ -1,0 +1,64 @@
+@import '../../../styles/abstract/variables.scss';
+
+.our-courses__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 32rem;
+    height: 47rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 3px 12px rgba(183, 183, 183, 0.3);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    text-align: center;
+    &--title {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    &--subject {
+        font-size: 2.2rem;
+        font-weight: 200;
+    }
+
+    &--timeplan {
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $color-gray-superlight;
+    }
+
+    &--lector {
+        display: flex;
+        align-items: center;
+    }
+
+    &--lectoravatar {
+        height: 3.8rem;
+        width: 3.8rem;
+    }
+
+    &--lectorname {
+        font-size: 2.4rem;
+        color: $color-text-default;
+    }
+
+    &--rating {
+        width: 12rem;
+    }
+
+    &--price {
+        font-size: 3.8rem;
+        font-weight: 700;
+
+    }
+
+    &--button {
+        .button {
+            
+        }
+    }
+
+}

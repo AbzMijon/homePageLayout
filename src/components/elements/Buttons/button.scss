@@ -1,0 +1,38 @@
+@import '../../../styles/abstract/variables.scss';
+
+.button-main {
+    &__icon {
+        height: 16px;
+        width: 16px;
+        fill: $color-white;
+    }
+}
+
+.button-main:link,
+.button-main:visited {
+    height: 6.6rem;
+    width: 24rem;
+    max-width: 24.1rem;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 12px;
+    gap: 12px;
+    border: 0;
+
+    background-color: $color-gold-light;
+    border-radius: 50px;
+    transition: all .3s;
+}
+
+.button-main:hover {
+
+    color: $color-text-default;
+    border: 1px solid $color-text-default;
+    .button-main__icon {
+        fill: $color-text-default;
+    }
+}
+

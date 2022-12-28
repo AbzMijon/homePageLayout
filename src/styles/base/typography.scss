@@ -1,0 +1,20 @@
+@import '../abstract/variables.scss';
+
+.main-header-big {
+    color:$color-text-default;
+    font-weight: 600;
+    font-size: 5.4rem;
+    line-height: 6.5rem;
+}
+.main-header-small {
+    color:$color-text-default;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.main-text-goldeffect {
+    color: $color-gold-light;
+    background-color: rgba($color: $color-gold-light, $alpha: .3);
+    
+}

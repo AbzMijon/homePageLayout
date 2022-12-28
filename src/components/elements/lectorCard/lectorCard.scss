@@ -1,0 +1,126 @@
+@import '../../../styles/abstract/variables.scss';
+
+.lector-card {
+    width: 100%;
+    height: 25.1rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 3px 12px rgba(183, 183, 183, 0.3);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 1160px) {
+        width: 270px;
+    }
+    @media (max-width: 800px) {
+        width: 200px;
+    }
+    @media (max-width: 500px) {
+        width: 150px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__lectorname {
+        display: block;
+        margin-bottom: 20px;
+        &--firstname {
+            font-size: 2.4rem;
+            font-weight: 700;
+
+        }
+
+        &--anothername {
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+    }
+
+    &__lectoravatar {
+        transform: translateX(-40%);
+
+        @media (max-width: 800px) {
+            transform: translateX(-10%);
+        }
+        img {
+            width: 9rem;
+            height: 9rem;
+        }
+
+    }
+
+    &__uprating {
+        display: flex;
+        width: 6.8rem;
+        height: 6.8rem;
+        justify-content: center;
+        align-items: center;
+
+        transform: translate(-80%, -190%);
+
+
+        border-radius: 100px;
+
+        background-color: $color-gold-light;
+        text-align: center;
+        color: $color-white;
+
+
+        border: 8px solid #FFFFFF;
+        box-shadow: 0 3px 12px rgba(183, 183, 183, 0.3);
+
+        &--firstdigit {
+            font-size: 3.6rem;
+            font-weight: 600;
+        }
+
+        &--anotherdigit {
+            font-size: 2.4rem;
+            font-weight: 600;
+        }
+
+    }
+
+    &__mainrating {
+        color: $color-gray-superlight;
+        display: flex;
+        width: 16rem;
+        margin-bottom: 20px;
+        &--firstdigit {
+            font-size: 3.2rem;
+            font-weight: 600;
+        }
+
+        &--anotherdigit {
+            font-size: 2.4rem;
+            font-weight: 600;
+        }
+    }
+
+    &__subjects {
+
+    }
+
+    &__listofsubjects {
+        padding-left: 20px;
+        list-style: outside;
+        li {
+            color: $color-gold-light;
+            font-size: 1.6rem;
+            span {
+                color: $color-text-default;
+            }
+        }
+    }
+}

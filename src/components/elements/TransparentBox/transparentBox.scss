@@ -1,0 +1,82 @@
+@import '../../../styles/abstract/variables.scss';
+
+
+.transparent-card {
+    width: 23.4rem;
+    height: 6.4rem;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 16px rgba(183, 183, 183, 0.21);
+    backdrop-filter: blur(10px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 2rem 2rem 0 2rem;
+    
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(199, 200, 199, 0.867);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__wrapper {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media (max-width: 800px) {
+            width: 200px;
+            height: 50px;
+            padding: 10px;
+        }
+
+        &--text {
+            color: $color-text-default;
+            font-weight: 600;
+            font-size: 1.6rem;
+
+            @media (max-width: 800px) {
+                font-size: 12px;
+            }    
+
+        }
+        &--icon {
+            display: flex;
+            height: 4rem;
+            width: 4rem;
+            margin-right: 15px;
+
+            @media (max-width: 800px) {
+                height: 25px;
+                width: 25px;
+            }    
+        }
+    }    
+
+}
+
+.transparent-card-with-star {
+
+    &__wrapper {
+        width: 90%;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        &--text {
+            color: $color-gray-superlight;
+            font-weight: 600;
+            margin-right: 10px;
+            &__first-letter {
+                font-size: 3.2rem;
+            }
+            &__second-letter {
+                font-size: 2.4rem;
+            }
+
+        }
+        &--icon {
+            display: flex;
+            height: 2.1rem;
+            width: 1.8em;
+        }
+    }
+}
