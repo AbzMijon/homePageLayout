@@ -6,16 +6,14 @@ import { PaymentsScroll } from '../components/scrolls/payments/PaymentsScroll';
 import { QuestionsScroll } from '../components/scrolls/questionsScroll/QuestionsScroll';
 import { WebinarScroll } from '../components/scrolls/webinarsScroll/WebinarScroll';
 import Map from '../components/scrolls/map/Map';
-import '../styles/app.scss';
 
 export const Main = () => {
   return (
     <div className='container'>
-      <div className="test-scroll"></div>
         <Map/>
+        <BestLectorsScroll/>
         <OurCoursesScroll/>
         <WebinarScroll/>
-        <BestLectorsScroll/>
         <QuestionsScroll/>
         <PaymentsScroll/>
         <Footer/>

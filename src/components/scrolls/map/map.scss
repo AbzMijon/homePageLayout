@@ -1,9 +1,12 @@
 .map {
     position: relative;
-    padding: 139px 0 261px 0;
+    padding: 26px 0 261px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: /* linear-gradient(to left, rgba(246, 247, 251, 0.2), rgba(246, 247, 251, 0.2)), */ url(../../../assets/img/Map.png);
+    background-size: cover;
+    background-position: center;
 }
 .map__bg {
     width: 100%;
@@ -20,6 +23,14 @@
     color: #3C4852;
     margin-bottom: 59px;
 }
+.bg__border {
+    background-image: url(../../../assets/img/mapSelection.png);
+}
+.map__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
 .map__find {
     padding: 17px 20px 28px 20px;
@@ -28,6 +39,7 @@
     box-shadow: 0px 3px 12px rgba(183, 183, 183, 0.3);
     backdrop-filter: blur(5px);
     border-radius: 20px;
+    margin-top: -10px;
 }
 .map__find-types {
     display: flex;
@@ -60,7 +72,11 @@
     display: inline-block;
     background: #FFFFFF;
     border: 1px solid #E4E5E6;
-    border-radius: 50px 0px 0px 50px;
+    cursor: pointer;
+    transition: 0.1s all;
+    &:hover {
+        border: 1px solid #FDCE0E;
+    }
 }
 .map__setting-search-icon {
     position: absolute;
@@ -81,8 +97,44 @@
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
     grid-template-columns: repeat(4, 1fr);
     column-gap: 4px;
+    margin-bottom: 27px;
 }
-
-/* @media only screen and (max-width: ) {
-    
-} */
+.map__setting-region {
+    border-radius: 0px 50px 50px 0px;
+}
+.map__setting-search {
+    border-radius: 50px 0px 0px 50px;
+}
+.map__bg-teachers {
+    max-height: 330px;
+}
+.map__sort-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3C4852;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+.map__sort-item--hidden {
+    display: none;
+}
+.map__sort-item-arrow {
+    margin-left: 16px;
+}
+.map__selects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.map__other-selects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li + li {
+        margin-left: 89px;
+    }
+}

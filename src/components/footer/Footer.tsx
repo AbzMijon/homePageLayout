@@ -77,8 +77,7 @@ export const Footer = () => {
                     </div>
                     <div className="footer__soclink">
                         <a href="">
-                        <img src={linked_icon} alt="linked in" className="link" />
-                            
+                            <img src={linked_icon} alt="linked in" className="link" />
                         </a>
                     </div>
                 </div>
@@ -87,6 +86,4 @@ export const Footer = () => {
         </div>
     </section>
   )
-
-
 }

@@ -17,6 +17,7 @@
         }
     }
 
+
     &__cards {
         display: flex;
         justify-content: center;
@@ -126,4 +127,8 @@
         }
     }
     
+}
+
+.bg__border {
+  background-image: url(../../../assets/img/cursesSelection.png);
 }

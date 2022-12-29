@@ -26,10 +26,6 @@
         }
     }
 
-    &__header {
-        
-    }
-
 
     &__form {
         display: flex;
@@ -168,6 +164,9 @@
         }
 
 
+    }
+    .bg__border {
+        background-image: url(../../../assets/img/Quastionselection.png);
     }
 
     &__addition {

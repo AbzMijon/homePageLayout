@@ -2,22 +2,18 @@ import React from 'react';
 import { Button } from '../../elements/Buttons/Button';
 import { LectorCard } from '../../elements/lectorCard/LectorCard';
 import './bestLectorsScroll.scss';
-
-// import more_icon from '../../../assets/icons/More_icon.png';
 import right_chevron from '../../../assets/icons/SVG/chevron-thin-right.svg';
 import star_icon from '../../../assets/icons/star_icon.png';
 import best_lector_1 from '../../../assets/icons/best_lector_1.png';
 import best_lector_2 from '../../../assets/icons/best_lector_2.png';
 import best_lector_3 from '../../../assets/icons/best_lector_3.png';
-import best_lector_4 from '../../../assets/icons/best_lector_4.png';
 
 export const BestLectorsScroll = () => {
   return (
     <section className="best-lectors">
-
       <div className="best-lectors__wrapper">
         <div className="best-lectors__col--1">
-          <h2 className="best-lectors__header main-header-big"><span className='main-text-goldeffect'>Преподователи</span> Месяца</h2>
+          <h2 className="best-lectors__header main-header-big"><span className='bg__border'>Преподователи</span> Месяца</h2>
 
           <div className="best-lectors__col--1__btn_and_card">
             <Button icon={right_chevron} title='Подробнее'/>
@@ -72,8 +68,6 @@ export const BestLectorsScroll = () => {
           </div>
         </div>
       </div>
-
-      
     </section>
   )
 }
