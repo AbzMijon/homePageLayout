@@ -1,13 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 import { CoursesCard } from '../../elements/coursesCard/CoursesCard';
 import './ourCoursesScroll.scss';
 
-import debounce from "lodash.debounce";
-import cn from "classnames";
-
-
 import lectorAvatar from '../../../assets/img/avatar_lector.png';
-// import More_icon from '../../../assets/icons/More_icon.png';
 import right_chevron from '../../../assets/icons/SVG/chevron-thin-right.svg';
 import rating_icon from '../../../assets/icons/star_icon.png';
 

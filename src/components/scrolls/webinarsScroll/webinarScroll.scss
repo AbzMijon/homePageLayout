@@ -1,28 +1,28 @@
 .webinar {
-    height: 70rem;
     background-image: url('../../../assets/img/bg-5.png');
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     overflow: hidden;
+    padding: 80px 0 120px 0;
 
     &__header {
-        // padding-top: 8.7rem;
-        // margin-bottom: 9.4rem;
-        margin-left: 72px;
-        
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 65px;
+        margin-left: 24%;
+        margin-bottom: 96px;
     }
 
     &__videos {
 
         margin-left: 72px;
         display: flex;
-        height: 30.5rem;
+        height: 400px;
 
         .list {
             max-width: 100%;
-            height: 500px;
             display: flex;
             overflow-x: auto;
             list-style: none;
@@ -102,19 +102,10 @@
             cursor: pointer;
             z-index: 2;
           }
-          
-          .buttonLeft {
-            left: -20px;
-          }
-          
-          .buttonRight {
-            right: -20px;
-          }
-          
-          .button--hidden {
-            display: none;
-          }
     }
+}
+.webinar-card__wrapper {
+  padding: 0 0 6px 22px;
 }
 .bg__border {
   background-image: url(../../../assets/img/webinarsSelection.png);
