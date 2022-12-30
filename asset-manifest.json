@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.572e9bf4.css",
+    "main.js": "/static/js/main.ea503b10.js",
+    "static/media/Bg_4.png": "/static/media/Bg_4.ebd23305b85a1fe992d2.png",
+    "static/media/bg-5.png": "/static/media/bg-5.d45f6667e9608fee750c.png",
+    "static/media/Bg_6.png": "/static/media/Bg_6.8cb90564dd8f1ac08027.png",
+    "static/media/Woman_6.png": "/static/media/Woman_6.2f3e00a62e38a4ba0114.png",
+    "static/media/Bg_5.png": "/static/media/Bg_5.d5150c6934a9953abc2a.png",
+    "static/media/Map.png": "/static/media/Map.eab8bd9e08de1818b0a4.png",
+    "static/media/Group.png": "/static/media/Group.9041c1fbf09b3da06914.png",
+    "static/media/preview-1.png": "/static/media/preview-1.51be71cab79b60a87364.png",
+    "static/media/best_lector_2.png": "/static/media/best_lector_2.de18a93e67a605d2a9f3.png",
+    "static/media/best_lector_3.png": "/static/media/best_lector_3.61803eac185f60c9ddf2.png",
+    "static/media/best_lector_1.png": "/static/media/best_lector_1.7f6a67bfd763bd894ee6.png",
+    "index.html": "/index.html",
+    "static/media/chevron-thin-right.svg": "/static/media/chevron-thin-right.ae29a6a23ab074fa504b1e35959ae06e.svg",
+    "main.572e9bf4.css.map": "/static/css/main.572e9bf4.css.map",
+    "main.ea503b10.js.map": "/static/js/main.ea503b10.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.572e9bf4.css",
+    "static/js/main.ea503b10.js"
+  ]
+}
