@@ -25,7 +25,7 @@ export const QuestionsScroll = () => {
 
     const validateSchema = yup.object().shape({
         name: yup.string().required('Field is required!').min(3, 'Too short!').max(18, 'Too long!'),
-        email: yup.string().required('Field is required!').min(4, 'unreliable password!').max(50, 'password is so loong..'),
+        email: yup.string().email('Incorect email address!').required('Field is required!').min(4, 'unreliable password!').max(50, 'password is so loong..'),
         message: yup.string().required('Field is required!').min(5, 'Message too short!').max(300, 'Message too long!'),
     })
 

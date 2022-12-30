@@ -1,8 +1,8 @@
 @import '../../../styles/abstract/variables.scss';
 
 .questions {
-    background-image: url('../../../assets/img/Bg_6.png') center center fixed;
-    background-size: 100%;
+    background: url('../../../assets/img/BgQuastions.png') center center;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     padding: 100px 0 148px 0;
