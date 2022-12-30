@@ -4,10 +4,13 @@
     height: 262px;
     background-color: #F6F7FB;
     background-size: cover;
+    padding: 44px 0;
     .row {
+        width: 970px;
+        margin: 0 auto;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
+        align-items: flex-start;
         height: 100%;
     }
 
@@ -21,14 +24,22 @@
     &__header {
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 1.6rem;
+        font-size: 16px;
     }
 
     &__text {
+        margin-top: 22px;
         text-align: left;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
     }
 
     &__links {
+        margin-top: 22px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
         display: block;
     }
 
@@ -62,3 +73,6 @@
     }
 
 }
+.footer__link + .footer__link {
+    margin-top: 8px;
+} 

@@ -5,7 +5,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 89rem;
+    padding: 100px 0 148px 0;
 
 
     &__wrapper {
@@ -17,10 +17,10 @@
         font-weight: 600;
         font-size: 54px;
         line-height: 65px;
+        margin-bottom: 58px;
     }
 
     &__content {
-        height: 89rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -35,137 +35,53 @@
     &__form {
         display: flex;
         flex-direction: column;
-        flex: 0 0 70%;
         justify-content: space-around;
-
-
-
+        margin-right: 40px;
         .form__main {
-            height: 80%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
             @media (max-width: 800px) {
                 align-items: center;
             }
         }
     }
-
-    .form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-
-
-        width: 45.9rem;
-        height: 40rem;
+    .form__inf {
+        padding: 48px 30px;
         background: rgba(255, 255, 255, 0.4);
-        border: 1px solid $color-white;
+        border: 1px solid #FFFFFF;
         box-shadow: 0px 3px 12px rgba(183, 183, 183, 0.3);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
         border-radius: 20px;
-
-        &__group {
-
-            &:not(:last-child) {
-                width: 90%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                border: 1px solid #A9AEB2;
-                border-radius: 100px;
-                height: 6.6rem;
-                transition: all .2s;
-            }
-            width: 90%;
-            display: flex;
-            justify-content: space-around;
-            align-items: left;
-            align-items: center;
-            border: 2px solid #A9AEB2;
-            border-radius: 20px;
-            height: 14rem;
-            transition: all .2s;
-
-            &:hover {
-                border: 2px solid $color-gold-light;
-            }
-
-            &--written {
-                width: 90%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 6.6rem;
-                background: #F9F0CC;
-                border: 2px solid #FDCE0E;
-                border-radius: 100px;
-            }
-
-            &--error {
-                width: 90%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 6.6rem;
-                background: #F9F0CC;
-                border: 2px solid #FDCE0E;
-                border-radius: 100px;
-            }
+        margin-bottom: 33px;
+    }
+    .form__button {
+        &:hover {
+            color: $color-text-default;
+            border: 1px solid $color-text-default;
         }
+        cursor: pointer;
+        align-self: start;
+        height: 6.6rem;
+        width: 24rem;
+        max-width: 24.1rem;
+        color: $color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        padding: 12px;
+        gap: 12px;
+        border: 0;
+        margin-bottom: 25px;
+        background-color: $color-gold-light;
+        border-radius: 50px;
+        transition: all .3s;
 
-        &__input {
-            display: flex;
-            flex: 0 0 90%;
-            border: 0 !important;
-            background-color: rgba(0,0,0,0);
-            color: $color-gray-superlight;
-            font-size: 1.6rem;
-
-            &:hover,
-            &:focus {
-                border: none !important;
-                outline: none;
-            }
-        }
-
-        &__image {
-            transform: translateX(60%);
-            width: 1.8rem;
-            height: 1.8rem;
-        }
-
-        &__button {
-
-            &:hover {
-                color: $color-text-default;
-                border: 1px solid $color-text-default;
-            }
-
-            align-self: start;
-            height: 6.6rem;
-            width: 24rem;
-            max-width: 24.1rem;
-            color: $color-white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            padding: 12px;
-            gap: 12px;
-            border: 0;
-        
-            background-color: $color-gold-light;
-            border-radius: 50px;
-            transition: all .3s;
-
-            &--img {        
-                height: 16px;
-                width: 16px;
-                fill: $color-white;
-            }
+        &--img {        
+            height: 16px;
+            width: 16px;
+            fill: $color-white;
         }
 
 
@@ -205,11 +121,27 @@
     }
 
 }
-.form__group {
-    text-align: start;
+.form__input-wrap {
+    width: 395px;
+    height: 67px;
+    position: relative;
+    margin-bottom: 20px;
 }
-.form__input {
-    width: 100%;
-    height: 100%;
-    text-align: start;
+.form__textare-wrap {
+    width: 395px;
+    height: 91px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.form__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    font-size: 16px;
+    color: #A9AEB2;
+    z-index: 3;
+}
+.form__icon-textarea {
+    top: 28px;
 }

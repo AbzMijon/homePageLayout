@@ -13,44 +13,41 @@ export const Footer = () => {
         <div className="row">
             <div className="col-1-of-4">
                 <h2 className="footer__header">
-                    Регистрация
+                    REGISTRATION
                 </h2>
                 <div className="footer__text">
-                    УНП 190738186
-                    Дата государственной 
-                    регистрации 20.07.2006, 
-                    решение №1423 Минский горисполком
-                    ООО «БелХард Девелопмент»
+                EASY 2 STUDY LIMITED
+                Company No. 14076514
+                Info@easy2study.com
                 </div>
             </div>
             <div className="col-1-of-4">
                 <h2 className="footer__header">
-                    Адрес
+                    ADDRESS
                 </h2>
                 <div className="footer__text">
-                    220113,
-                    Республика Беларусь
-                    г. Минск, пер. Ломоносова, д. 5,
-                    каб.25
-                    Тел./факс +375 (29) 220-84-26 info@belhard.com
+                EASY 2 STUDY LIMITED
+                1 Knightsbridge Green
+                London SW1X 7NE
+                United Kingdo
                 </div>
             </div>
             <div className="col-1-of-4">
                 <h2 className="footer__header">
-                    Компания
+                    СOMPANY
                 </h2>
                 <div className="footer__links">
                     <div className="footer__link">
-                    <a href="" className="footer__link">Преподователи</a>
+                    <a href="" className="footer__link">Teachers</a>
                     </div>
                     <div className="footer__link">
-                    <a href="" className="footer__link">Курсы</a>
+                    <a href="" className="footer__link">Courses</a>
                     </div>
                     <div className="footer__link">
-                    <a href="" className="footer__link">Вебинары</a>
+                    <a href="" className="footer__link">Webinars</a>
                     </div>
                     <div className="footer__link">
-                    <a href="" className="footer__link">Помощь</a>
+                    <a href="" className="footer__link">Help</a>
                     </div>
                 </div>
             </div>

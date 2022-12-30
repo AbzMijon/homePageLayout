@@ -1,0 +1,42 @@
+@import '../../styles/abstract/variables.scss';
+
+.formik__input {
+    display: flex;
+    border: 1px solid #A9AEB2;
+    color: $color-gray-superlight;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 23px 23px 23px 52px;
+    width: 396px;
+    border-radius: 100px;
+}
+.formik__textarea {
+    display: flex;
+    border: 1px solid #A9AEB2;
+    color: $color-gray-superlight;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 15px 35px 15px 52px;
+    width: 396px;
+    height: 91px;
+    border-radius: 20px;
+}
+.formik__input--error, .formik__textarea--error {
+    border: 1px solid red;
+    color: red;
+}
+.field {
+    border: 2px solid transparent;
+    margin-bottom: 5px;
+    position: relative;
+}
+.field__error {
+    font-size: 15px;
+    color: red;
+    text-align: center;
+}
+.login__title-field {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
