@@ -39,7 +39,7 @@ body {
     font-weight: 400;
     /* font-size: 16px; */
 
-    line-height: 2.4rem;
+    line-height: 24px;
     color: $color-text-default;
 }
 
@@ -62,4 +62,8 @@ a:visited {
 .vebinar-border {
     padding: 67px 26px 68px 9px;
 }
-
+.container--big {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+.container--mini {}

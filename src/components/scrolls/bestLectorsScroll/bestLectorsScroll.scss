@@ -2,7 +2,7 @@
     background-image: url('../../../assets/img/Bg_5.png');
     width: 100%;
     background-size: cover;
-    height: 89rem;
+    margin-bottom: 120px;
 
     &__wrapper {
         display: flex;
@@ -12,8 +12,8 @@
     }
 
     &__col--1 {
-        width: 64.5rem;
-        height: 89rem;
+        width: 645px;
+        height: 89px;
         display: flex;
         flex-direction: column;
         flex: 0 0 40%;
@@ -27,6 +27,7 @@
             font-weight: 600;
             font-size: 54px;
             line-height: 65px;
+            margin-bottom: 15px;
 
             @media (max-width: 1030px) {
                 margin-left: 72px;
@@ -60,11 +61,11 @@
         }
 
         &__firstcard {
-            width: 30rem;
+            width: 300px;
         }
 
         &__lastcard {
-            width: 38rem;
+            width: 380px;
         }
     }
     .bg__border {
