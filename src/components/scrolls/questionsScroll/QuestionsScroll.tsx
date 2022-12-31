@@ -8,7 +8,6 @@ import LoginFormikInput from '../../FormikInputs/FormikQuastionInput';
 import { AiOutlineUser, AiOutlineMail } from 'react-icons/ai';
 import FormikTextArea from '../../FormikInputs/FormikQuastionTextArea';
 
-
 export const QuestionsScroll = () => {
 
     type initialFormValuesTypes = {
