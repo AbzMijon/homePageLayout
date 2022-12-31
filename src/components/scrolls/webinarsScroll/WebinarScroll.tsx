@@ -29,7 +29,7 @@ export const WebinarScroll = () => {
                   slidesPerView: 2.5,
                   spaceBetween: 25
               },
-              1250: {
+              1320: {
                   slidesPerView: 3.5,
                   spaceBetween: 35
               },
@@ -37,14 +37,14 @@ export const WebinarScroll = () => {
                   slidesPerView: 3.5,
                   spaceBetween: 45
               },
-              1700: {
+              1920: {
                   slidesPerView: 4.5,
                   spaceBetween: 45
               },
-              1920: {
-                  slidesPerView: 5.5,
-                  spaceBetween: 45
-              },
+              2023: {
+                slidesPerView: 5.5,
+                spaceBetween: 45
+              }
           }}
           >
               <SwiperSlide>

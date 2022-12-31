@@ -30,7 +30,7 @@ export const OurCoursesScroll = () => {
                         slidesPerView: 1,
                         spaceBetween: 45
                     },
-                    480: {
+                    540: {
                         slidesPerView: 1.5,
                         spaceBetween: 45
                     },
