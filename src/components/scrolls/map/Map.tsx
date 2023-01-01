@@ -9,7 +9,6 @@ import { IoIosArrowDown } from 'react-icons/io';
 function Map() {
     return (
         <div className='map'>
-            {/* <img src={map} alt="" className="map__bg" /> */}
             <div className="map__content">
                 <div className="map__header">
                     <h2 className='map__title'>Online school<br/> at your <span className='bg__border'>home!</span></h2>

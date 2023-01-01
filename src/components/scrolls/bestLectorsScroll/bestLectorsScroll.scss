@@ -3,6 +3,10 @@
     width: 100%;
     background-size: cover;
     margin-bottom: 120px;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__wrapper {
         display: flex;
@@ -12,37 +16,21 @@
     }
 
     &__col--1 {
-        width: 645px;
-        height: 89px;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        flex: 0 0 40%;
         justify-content: space-around;
         align-items: center;
+        margin-right: 50px;
 
         .best-lectors__header {
             display: flex;
             justify-content: center;
             align-items: center;
-            font-weight: 600;
-            font-size: 54px;
-            line-height: 65px;
             margin-bottom: 15px;
-
-            @media (max-width: 1030px) {
-                margin-left: 72px;
-            }
-
-            @media (max-width: 800px) {
-                font-size: 35px;
-            }
-            @media (max-width: 800px) {
-                font-size: 21.2px;
-            }
         }
 
         @media (max-width: 800px) {
-            width: 200px;
             align-items: flex-start;
         }
 
@@ -56,47 +44,33 @@
             @media (max-width: 800px) {
                 flex-direction: column;
                 align-content: space-between;
-                height: 290px;
             }
-        }
-
-        &__firstcard {
-            width: 300px;
-        }
-
-        &__lastcard {
-            width: 380px;
         }
     }
     .bg__border {
         background-image: url(../../../assets/img/teacherSelection.png);
     }
     &__col--2 {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 89rem;
-        width: 50rem;
-
-
-
 
         @media (max-width: 800px) {
-            width: 200px;
             align-items: flex-start;
             justify-content: center;
         }
 
         @media (max-width: 375px) {
-            width: 150px;
             align-items: flex-start;
             justify-content: center;
         }
         
         &__first {
+            width: 100%;
             align-self: end;
-            width: 38rem;
             display: flex;
+            justify-content: start;
 
             @media (max-width: 800px) {
                 align-self: start;
@@ -105,9 +79,27 @@
         }
 
         &__second {
-            width: 30rem;
+            width: 100%;
             display: flex;
-            justify-content: flex-start;
+            justify-content: end;
         }
+    }
+}
+
+.best-lectors-btn {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .best-lector__card {
+        width: 100%;
+    }
+    .best-lectors__col--1__lastcard {
+        display: flex;
+        justify-content: end;
+    }
+    .best-lectors {
+        margin-bottom: 50px;
     }
 }

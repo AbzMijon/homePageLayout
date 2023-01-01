@@ -16,8 +16,10 @@ export const BestLectorsScroll = () => {
           <h2 className="best-lectors__header main-header-big"><span className='bg__border'>Преподаватели</span> Месяца</h2>
 
           <div className="best-lectors__col--1__btn_and_card">
-            <Button icon={right_chevron} title='Подробнее'/>
-            <div className="best-lectors__col--1__firstcard">
+            <div className="best-lectors-btn">
+              <Button icon={right_chevron} title='Подробнее'/>
+            </div>
+            <div className="best-lectors__col--1__firstcard best-lector__card">
               <LectorCard
                 key={1} 
                 lector={'Желудь Виктор Павлович'} 
@@ -30,7 +32,7 @@ export const BestLectorsScroll = () => {
             </div>
           </div>
 
-          <div className="best-lectors__col--1__lastcard">
+          <div className="best-lectors__col--1__lastcard best-lector__card">
             <LectorCard 
               key={2} 
               lector={'Желудь Виктор Павлович'} 
@@ -44,7 +46,7 @@ export const BestLectorsScroll = () => {
         </div>
 
         <div className="best-lectors__col--2">
-          <div className="best-lectors__col--2__first">
+          <div className="best-lectors__col--2__first best-lector__card">
             <LectorCard 
               key={3} 
               lector={'Желудь Виктор Павлович'} 
@@ -55,7 +57,7 @@ export const BestLectorsScroll = () => {
               width={'250'}
             />
           </div>
-          <div className="best-lectors__col--2__second">
+          <div className="best-lectors__col--2__second best-lector__card">
             <LectorCard 
               key={3} 
               lector={'Желудь Виктор Павлович'} 

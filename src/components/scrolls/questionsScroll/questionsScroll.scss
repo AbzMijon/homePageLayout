@@ -62,9 +62,9 @@
         }
         cursor: pointer;
         align-self: start;
-        height: 6.6rem;
-        width: 24rem;
-        max-width: 24.1rem;
+        height: 66px;
+        width: 240px;
+        max-width: 241px;
         color: $color-white;
         display: flex;
         justify-content: center;
@@ -97,7 +97,7 @@
             }
 
             &--text {
-                font-size: 1.6rem;
+                font-size: 16px;
             }
         }
 
@@ -144,4 +144,19 @@
 }
 .form__icon-textarea {
     top: 28px;
+}
+
+@media only screen and (max-width: 935px) {
+    .questions {
+        padding: 100px 20px 148px 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .questions__header {
+        margin-bottom: 30px;
+    }
+    .questions__form {
+        margin-right: 0;
+    }
 }

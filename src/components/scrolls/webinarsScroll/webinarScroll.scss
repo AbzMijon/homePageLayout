@@ -110,3 +110,9 @@
 .bg__border {
   background-image: url(../../../assets/img/webinarsSelection.png);
 }
+
+@media only screen and (max-width: 800px) {
+  .webinar__header {
+    margin-bottom: 30px;
+  }
+}

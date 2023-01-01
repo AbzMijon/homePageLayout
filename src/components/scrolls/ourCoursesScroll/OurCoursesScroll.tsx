@@ -25,6 +25,7 @@ export const OurCoursesScroll = () => {
         </h1>
         <div className="our-courses__cards">
             <Swiper
+                id='swiper'
                 breakpoints={{
                     0: {
                         slidesPerView: 1,
@@ -59,99 +60,113 @@ export const OurCoursesScroll = () => {
                 <SwiperSlide>
                     <div className="card">
                         <CoursesCard 
-                        title={'Подготовки к ОГЭ'} 
-                        subject={'математика 9 класс'} 
-                        timeplan={'10 уроков по 40 минут'} 
-                        lectorAvatar={lectorAvatar} 
-                        lector={'Ольга Малова'} 
-                        rating={5} 
-                        price={'129'} 
-                        rating_icon={rating_icon} 
-                        icon_btn={right_chevron}/>
+                            title={'Подготовки к ОГЭ'} 
+                            subject={'математика 9 класс'} 
+                            timeplan={'10 уроков по 40 минут'} 
+                            lectorAvatar={lectorAvatar} 
+                            lector={'Ольга Малова'} 
+                            rating={5} 
+                            price={'129'} 
+                            rating_icon={rating_icon} 
+                            icon_btn={right_chevron}
+                            key='1'
+                        />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="card">
                         <CoursesCard 
-                        title={'Подготовки к ОГЭ'} 
-                        subject={'математика 9 класс'} 
-                        timeplan={'10 уроков по 40 минут'} 
-                        lectorAvatar={lectorAvatar} 
-                        lector={'Ольга Малова'} 
-                        rating={5} 
-                        price={'129'} 
-                        rating_icon={rating_icon} 
-                        icon_btn={right_chevron}/>
+                            title={'Подготовки к ОГЭ'} 
+                            subject={'математика 9 класс'} 
+                            timeplan={'10 уроков по 40 минут'} 
+                            lectorAvatar={lectorAvatar} 
+                            lector={'Ольга Малова'} 
+                            rating={5} 
+                            price={'129'} 
+                            rating_icon={rating_icon} 
+                            icon_btn={right_chevron}
+                            key='2'
+                        />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="card">
                         <CoursesCard 
-                        title={'Подготовки к ОГЭ'} 
-                        subject={'математика 9 класс'} 
-                        timeplan={'10 уроков по 40 минут'} 
-                        lectorAvatar={lectorAvatar} 
-                        lector={'Ольга Малова'} 
-                        rating={5} 
-                        price={'129'} 
-                        rating_icon={rating_icon} 
-                        icon_btn={right_chevron}/>
+                            title={'Подготовки к ОГЭ'} 
+                            subject={'математика 9 класс'} 
+                            timeplan={'10 уроков по 40 минут'} 
+                            lectorAvatar={lectorAvatar} 
+                            lector={'Ольга Малова'} 
+                            rating={5} 
+                            price={'129'} 
+                            rating_icon={rating_icon} 
+                            icon_btn={right_chevron}
+                            key='3'
+                        />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="card">
                         <CoursesCard 
-                        title={'Подготовки к ОГЭ'} 
-                        subject={'математика 9 класс'} 
-                        timeplan={'10 уроков по 40 минут'} 
-                        lectorAvatar={lectorAvatar} 
-                        lector={'Ольга Малова'} 
-                        rating={5} 
-                        price={'129'} 
-                        rating_icon={rating_icon} 
-                        icon_btn={right_chevron}/>
+                            title={'Подготовки к ОГЭ'} 
+                            subject={'математика 9 класс'} 
+                            timeplan={'10 уроков по 40 минут'} 
+                            lectorAvatar={lectorAvatar} 
+                            lector={'Ольга Малова'} 
+                            rating={5} 
+                            price={'129'} 
+                            rating_icon={rating_icon} 
+                            icon_btn={right_chevron}
+                            key='4'
+                        />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="card">
                         <CoursesCard 
-                        title={'Подготовки к ОГЭ'} 
-                        subject={'математика 9 класс'} 
-                        timeplan={'10 уроков по 40 минут'} 
-                        lectorAvatar={lectorAvatar} 
-                        lector={'Ольга Малова'} 
-                        rating={5} 
-                        price={'129'} 
-                        rating_icon={rating_icon} 
-                        icon_btn={right_chevron}/>
+                            title={'Подготовки к ОГЭ'} 
+                            subject={'математика 9 класс'} 
+                            timeplan={'10 уроков по 40 минут'} 
+                            lectorAvatar={lectorAvatar} 
+                            lector={'Ольга Малова'} 
+                            rating={5} 
+                            price={'129'} 
+                            rating_icon={rating_icon} 
+                            icon_btn={right_chevron}
+                            key='5'
+                        />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="card">
                         <CoursesCard 
-                        title={'Подготовки к ОГЭ'} 
-                        subject={'математика 9 класс'} 
-                        timeplan={'10 уроков по 40 минут'} 
-                        lectorAvatar={lectorAvatar} 
-                        lector={'Ольга Малова'} 
-                        rating={5} 
-                        price={'129'} 
-                        rating_icon={rating_icon} 
-                        icon_btn={right_chevron}/>
+                            title={'Подготовки к ОГЭ'} 
+                            subject={'математика 9 класс'} 
+                            timeplan={'10 уроков по 40 минут'} 
+                            lectorAvatar={lectorAvatar} 
+                            lector={'Ольга Малова'} 
+                            rating={5} 
+                            price={'129'} 
+                            rating_icon={rating_icon} 
+                            icon_btn={right_chevron}
+                            key='6'
+                        />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="card">
                         <CoursesCard 
-                        title={'Подготовки к ОГЭ'} 
-                        subject={'математика 9 класс'} 
-                        timeplan={'10 уроков по 40 минут'} 
-                        lectorAvatar={lectorAvatar} 
-                        lector={'Ольга Малова'} 
-                        rating={5} 
-                        price={'129'} 
-                        rating_icon={rating_icon} 
-                        icon_btn={right_chevron}/>
+                            title={'Подготовки к ОГЭ'} 
+                            subject={'математика 9 класс'} 
+                            timeplan={'10 уроков по 40 минут'} 
+                            lectorAvatar={lectorAvatar} 
+                            lector={'Ольга Малова'} 
+                            rating={5} 
+                            price={'129'} 
+                            rating_icon={rating_icon} 
+                            icon_btn={right_chevron}
+                            key='7'
+                        />
                     </div>
                 </SwiperSlide>
             </Swiper>
