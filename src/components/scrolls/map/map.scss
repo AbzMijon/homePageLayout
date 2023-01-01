@@ -159,3 +159,26 @@
         margin-bottom: 50px;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .map__selects {
+        align-items: start;
+        flex-direction: column;
+    }
+    .map__other-selects {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .map__other-selects li + li {
+        margin-left: 0;
+    }
+    .map__other-selects li {
+        margin-top: 20px;
+    }
+    .map__find-type {
+        padding-right: 20px;
+    }
+    .map__find-type + .map__find-type {
+        margin-left: 15px;
+    }
+}

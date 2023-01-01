@@ -83,3 +83,10 @@
         justify-items: start;
     }
 }
+
+@media only screen and (max-width: 500px) {
+    .footer .row {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+    }
+}
