@@ -29,13 +29,13 @@ export const OurCoursesScroll = () => {
                 breakpoints={{
                     0: {
                         slidesPerView: 1,
-                        spaceBetween: 45
+                        spaceBetween: 45,
                     },
-                    540: {
+                    440: {
                         slidesPerView: 1.5,
-                        spaceBetween: 45
+                        spaceBetween: 5
                     },
-                    870: {
+                    700: {
                         slidesPerView: 2.5,
                         spaceBetween: 25
                     },

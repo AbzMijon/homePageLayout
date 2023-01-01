@@ -16,7 +16,7 @@ export const WebinarCard:React.FC<Props> = ({ title, preview, timeline, postedAt
     let arrOfStars: ReactElement<React.ReactElement>[] = [];
     if (rating) {
         for (let i = 1; i <= rating; i++) {
-            arrOfStars.push(<img style={{height: '2.3rem'}} src={rating_icon} alt='rating_icon'></img>);
+            arrOfStars.push(<img style={{height: '23px'}} src={rating_icon} alt='rating_icon'></img>);
         }
     }
 

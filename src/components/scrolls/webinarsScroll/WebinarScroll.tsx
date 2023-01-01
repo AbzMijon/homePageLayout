@@ -21,8 +21,12 @@ export const WebinarScroll = () => {
                   slidesPerView: 1,
                   spaceBetween: 45
               },
-              585: {
-                  slidesPerView: 1.5,
+              575: {
+                slidesPerView: 1.8,
+                spaceBetween: 45
+              },
+              700: {
+                  slidesPerView: 2.2,
                   spaceBetween: 45
               },
               950: {

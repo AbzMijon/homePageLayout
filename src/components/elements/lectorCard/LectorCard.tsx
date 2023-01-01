@@ -22,7 +22,7 @@ export const LectorCard:React.FC<Props> = ({ lectoravatar, rating, rating_icon, 
 
     if (firstLetterToNum) {
         for (let i = 1; i <= firstLetterToNum + 1; i++) {
-            arrOfStars.push(<img style={{height: '2.4rem'}} src={rating_icon} alt='rating_icon'></img>);
+            arrOfStars.push(<img style={{height: '24px'}} src={rating_icon} alt='rating_icon'></img>);
         }
     }
     

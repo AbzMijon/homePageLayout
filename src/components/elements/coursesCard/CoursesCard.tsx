@@ -19,7 +19,7 @@ export const CoursesCard:React.FC<Props> = ({ title, subject, timeplan, lectorAv
 
     if (rating) {
         for (let i = 1; i <= rating; i++) {
-            arrOfStars.push(<img style={{height: '2.4rem'}} src={rating_icon} alt='rating_icon'></img>);
+            arrOfStars.push(<img style={{height: '24px'}} src={rating_icon} alt='rating_icon'></img>);
         }
     }
     return (

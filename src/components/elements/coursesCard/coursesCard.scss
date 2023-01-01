@@ -13,7 +13,7 @@
     backdrop-filter: blur(10px);
     border-radius: 20px;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 10px;
     &--title {
         font-weight: 700;
         font-size: 24px;
@@ -63,5 +63,31 @@
         font-weight: 700;
         font-size: 38px;
         line-height: 46px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .our-courses__card {
+        &--title {
+            font-size: 20px;
+            line-height: 29px;
+        }
+    
+        &--subject {
+            font-size: 18px;
+        }
+    
+        &--timeplan {
+            font-size: 15px;
+        }
+    
+        &--lectorname {
+            font-size: 22px;
+        }
+    
+        &--price {
+            font-size: 30px;
+            line-height: 43px;
+        }
     }
 }
