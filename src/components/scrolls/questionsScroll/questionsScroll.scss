@@ -69,7 +69,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
+        font-size: 20px;
         padding: 12px;
         gap: 12px;
         border: 0;
@@ -158,5 +158,16 @@
     }
     .questions__form {
         margin-right: 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .form__input-wrap {
+        width: 320px;
+    }
+    .form__textare-wrap {
+        width: 320px;
+    }
+    .form__button {
+        width: 170px;
     }
 }

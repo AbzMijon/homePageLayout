@@ -40,3 +40,9 @@
     font-weight: bold;
     font-size: 15px;
 }
+
+@media only screen and (max-width: 500px) {
+    .formik__input, .formik__textarea {
+        width: 320px;
+    }
+}

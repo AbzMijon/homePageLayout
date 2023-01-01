@@ -30,10 +30,6 @@
             margin-bottom: 15px;
         }
 
-        @media (max-width: 800px) {
-            align-items: flex-start;
-        }
-
         &__btn_and_card {
             width: inherit;
             display: flex;
@@ -101,5 +97,23 @@
     }
     .best-lectors {
         margin-bottom: 50px;
+    }
+    .best-lectors-btn {
+        margin-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .best-lectors__col--1 {
+        margin-right: 0;
+    }
+    .best-lector__card {
+        width: auto;
+    }
+    .best-lectors__col--2 {
+        align-items: center;
+    }
+    .best-lectors__col--2__first {
+        align-self: auto;
     }
 }
