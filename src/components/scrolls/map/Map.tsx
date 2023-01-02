@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './map.scss';
-import map from '../../../assets/img/Map.png';
 import Group from '../../../assets/img/Group.png';
 import { AiOutlineSearch, AiOutlineCalendar } from 'react-icons/ai';
 import { BsCurrencyDollar, BsFillGeoAltFill } from 'react-icons/bs';
 import { IoIosArrowDown } from 'react-icons/io';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function Map() {
+
+    const [startDate, setStartDate] = useState(new Date());
+    const [topic, setTopic] = useState(false);
+    const [price, setPrice] = useState(false);
+    const [country, setCountry] = useState(false);
+    const [sort, setSort] = useState(false);
+    const [experience, setExperience] = useState(false);
+    const [gender, setGender] = useState(false);
+    const [age, setAge] = useState(false);
+
     return (
         <div className='map'>
             <div className="map__content">
@@ -21,58 +32,96 @@ function Map() {
                         <li className="map__find-type">Webinars</li>
                     </ul>
                     <ul className="map__settings">
-                        <li className='map__settings-item map__setting-search'>
+                        <li className={topic ? 'map__settings-item map__setting-search map__settings-item-active' : 'map__settings-item map__setting-search'} onClick={() => setTopic(!topic)} onMouseLeave={() => setTopic(false)}>
                             <p className='map__settings-item-title'>Topic</p>
                             <AiOutlineSearch className='map__setting-search-icon'/>
+                            {topic &&
+                                <ul className='map__hidden-list'>
+                                    <li className='map__hidden-item'>Geography</li>
+                                    <li className='map__hidden-item'>History</li>
+                                    <li className='map__hidden-item'>Science</li>
+                                    <li className='map__hidden-item'>Polish</li>
+                                    <li className='map__hidden-item'>Ukrainian</li>
+                                    <li className='map__hidden-item'>Italian</li>
+                                    <li className='map__hidden-item'>Spanish</li>
+                                    <li className='map__hidden-item'>French</li>
+                                    <li className='map__hidden-item'>Mathematics</li>
+                                </ul>
+                            }
                         </li>
-                        <li className='map__settings-item'>
-                            <p className='map__settings-item-title'>15 September</p>
+                        <li className='map__settings-item map__settings-calendar'>
+                            <DatePicker className='map__calendar' selected={startDate} onChange={(date:Date) => setStartDate(date)} />
                             <AiOutlineCalendar className='map__setting-search-icon'/>
                         </li>
-                        <li className='map__settings-item'>
+                        <li className={price ? 'map__settings-item map__settings-item-active' : 'map__settings-item'} onClick={() => setPrice(!price)} onMouseLeave={() => setPrice(false)}>
                             <p className='map__settings-item-title'>Price</p>
                             <BsCurrencyDollar className='map__setting-search-icon'/>
+                            {price &&
+                                <ul className='map__hidden-list'>
+                                    <li className='map__hidden-item'>£5 - £10</li>
+                                    <li className='map__hidden-item'>£10 - £25</li>
+                                    <li className='map__hidden-item'>£25 - £50</li>
+                                    <li className='map__hidden-item'>£50 - £100</li>
+                                </ul>
+                            }
                         </li>
-                        <li className='map__settings-item map__setting-region'>
+                        <li className={country ? 'map__settings-item map__setting-region map__settings-item-active' : 'map__settings-item map__setting-region'} onClick={() => setCountry(!country)} onMouseLeave={() => setCountry(false)}>
                             <p className='map__settings-item-title'>Country</p>
                             <BsFillGeoAltFill className='map__setting-search-icon'/>
+                            {country &&
+                                <ul className='map__hidden-list'>
+                                    <li className='map__hidden-item'>English</li>
+                                    <li className='map__hidden-item'>Arab</li>
+                                    <li className='map__hidden-item'>Vietnamese</li>
+                                    <li className='map__hidden-item'>Spanish</li>
+                                    <li className='map__hidden-item'>Russian</li>
+                                </ul>
+                            }
                         </li>
                     </ul>
                     <ul className="map__selects">
-                        <li>
-                            <ul className="map__sort">
-                                <li className="map__sort-item">Sort <IoIosArrowDown className='map__sort-item-arrow'/></li>
-                                <li className="map__sort-item map__sort-item--hidden">Recommended</li>
-                                <li className="map__sort-item map__sort-item--hidden">Popularity</li>
-                                <li className="map__sort-item map__sort-item--hidden">Price: Low to High</li>
-                                <li className="map__sort-item map__sort-item--hidden">Price: High to Low</li>
-                                <li className="map__sort-item map__sort-item--hidden">Rating</li>
-                            </ul>
+                        <li className='map__settings-item selects-item' onClick={() => setSort(!sort)} onMouseLeave={() => setSort(false)}>
+                            Sort <IoIosArrowDown className='map__sort-item-arrow'/>
+                            {sort &&
+                                <ul className="map__hidden-list">
+                                    <li className="map__hidden-item">Recommended</li>
+                                    <li className="map__hidden-item">Popularity</li>
+                                    <li className="map__hidden-item">Price: Low to High</li>
+                                    <li className="map__hidden-item">Price: High to Low</li>
+                                    <li className="map__hidden-item">Rating</li>
+                                </ul>
+                            }
                         </li>
                         <div className="map__other-selects">
-                            <li>
-                                <ul className="map__sort">
-                                    <li className="map__sort-item">Experience <IoIosArrowDown className='map__sort-item-arrow'/></li>
-                                    <li className="map__sort-item map__sort-item--hidden">Up to 1 year</li>
-                                    <li className="map__sort-item map__sort-item--hidden">1 - 5 years</li>
-                                    <li className="map__sort-item map__sort-item--hidden">5 - 10 years</li>
-                                    <li className="map__sort-item map__sort-item--hidden">Over 10 years</li>
-                                </ul>
+                            <li className="map__settings-item selects-item" onClick={() => setExperience(!experience)} onMouseLeave={() => setExperience(false)}>
+                                Experience <IoIosArrowDown className='map__sort-item-arrow'/>
+                                {experience &&
+                                    <ul className="map__hidden-list">
+                                        <li className="map__hidden-item">Up to 1 year</li>
+                                        <li className="map__hidden-item">1 - 5 years</li>
+                                        <li className="map__hidden-item">5 - 10 years</li>
+                                        <li className="map__hidden-item">Over 10 years</li>
+                                    </ul>
+                                }
                             </li>
-                            <li>
-                                <ul className="map__sort">
-                                    <li className="map__sort-item">Gender <IoIosArrowDown className='map__sort-item-arrow'/></li>
-                                    <li className="map__sort-item map__sort-item--hidden">Man</li>
-                                    <li className="map__sort-item map__sort-item--hidden">Woman</li>
-                                </ul>
+                            <li className="map__settings-item selects-item" onClick={() => setGender(!gender)} onMouseLeave={() => setGender(false)}>
+                                Gender <IoIosArrowDown className='map__sort-item-arrow'/>
+                                {gender &&
+                                    <ul className="map__hidden-list">
+                                        <li className="map__hidden-item">Man</li>
+                                        <li className="map__hidden-item">Woman</li>
+                                    </ul>
+                                }
                             </li>
-                            <li>
-                                <ul className="map__sort">
-                                    <li className="map__sort-item">Age <IoIosArrowDown className='map__sort-item-arrow'/></li>
-                                    <li className="map__sort-item map__sort-item--hidden">Up tp 30 y.o.</li>
-                                    <li className="map__sort-item map__sort-item--hidden">30 - 50 y.o.</li>
-                                    <li className="map__sort-item map__sort-item--hidden">Over 50 y.o.</li>
-                                </ul>
+                            <li className="map__settings-item selects-item" onClick={() => setAge(!age)} onMouseLeave={() => setAge(false)}>
+                                Age <IoIosArrowDown className='map__sort-item-arrow'/>
+                                {age &&
+                                    <ul className="map__hidden-list">
+                                        <li className="map__hidden-item">Up tp 30 y.o.</li>
+                                        <li className="map__hidden-item">30 - 50 y.o.</li>
+                                        <li className="map__hidden-item">Over 50 y.o.</li>
+                                    </ul>
+                                }
                             </li>
                         </div>
                     </ul>

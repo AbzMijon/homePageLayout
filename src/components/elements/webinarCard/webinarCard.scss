@@ -2,14 +2,13 @@
 @import '../../../styles/abstract/variables.scss';
 
 .webinar-card {
-    height: 300px;
-    width: 355px;
     background: rgba(255, 255, 255, 0.4);
     border: 1px solid #FFFFFF;
     box-shadow: 0px 3px 12px rgba(183, 183, 183, 0.3);
     backdrop-filter: blur(1rem);
     margin-right: 53px;
     border-radius: 20px;
+    padding-bottom: 10px;
 
     &__wrapper {
         display: flex;
